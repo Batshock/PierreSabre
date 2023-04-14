@@ -34,4 +34,7 @@ public class Humain {
 	public void perdreArgent(int perte) {
 		argent -= perte;
 	}
+	public void acheter(int prix) {
+		perdreArgent(prix);
+	}
 }
