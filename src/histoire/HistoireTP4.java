@@ -1,11 +1,11 @@
 package histoire;
 
+import personnages.Commercant;
 import personnages.Humain;
 
 public class HistoireTP4 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Humain prof = new Humain("Prof","kombucha",54);
 		prof.direBonjour();
 		prof.parler("J'ai "+prof.getArgent()+" sous en poche. "
@@ -17,6 +17,11 @@ public class HistoireTP4 {
 		prof.acheter(2);
 		prof.parler("Je n'ai plus que "+prof.getArgent()+" sous en poche. "
 				+ "Je ne peux même pas m'offrir un kimono à 50 sous.");
+		Commercant marco = new Commercant("Marco", 20);
+		marco.direBonjour();
+		marco.seFaireExtorquer();
+		marco.recevoirArgent(15);
+		marco.boire();
 	}
 
 }
